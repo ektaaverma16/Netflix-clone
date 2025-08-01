@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    height: 100vh;
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+
+}
+
+.nav_options {
+    height: 80px;
+
+}
+.logo img {
+    height: 2rem;
+    width: 6.5rem;
+}

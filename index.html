@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward_ios" />
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
 <body>
@@ -52,8 +45,8 @@
             <h3>Ready to watch? Enter your email to create or restart your membership.
             </h3>
             <div class="mail">
-                <input type="email" id="emailId" placeholder="Email address">
-                <label for="emailId"></label>
+                <input type="email" class="emailId" placeholder="Email address">
+                <!-- <label for="emailId"></label> -->
                 <button class="start">Get Started<span
                         class="material-symbols-outlined">arrow_forward_ios</span></button>
             </div>
@@ -76,8 +69,11 @@
     </div>
     <div class="container">
         <div class="contents">
-            <div class="trending-now">
+            <div class="heading">
                 <h2>Trending Now</h2>
+            </div>
+
+            <div class="cards">
                 <div class="movie-card">
                     <img src="assets/wednesday.jpg" alt="">
                     <span class="rank">1</span>
@@ -121,6 +117,79 @@
 
             </div>
         </div>
+
+        <section class="two">
+        <div class="heading more-reasons">
+            <h2>More reasons to join</h2>
+        </div>
+
+        <div class="reasons">
+            <div class="reasons-card">
+                <h3 class="title">Enjoy on your TV</h3>
+                <p class="para">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+                </p>
+            </div>
+            <div class="reasons-card">
+                <h3 class="title">Download your shows to watch offline</h3>
+                <p class="para">Save your favourites easily and always have something to watch.</p>
+            </div>
+            <div class="reasons-card">
+                <h3 class="title">Watch everywhere</h3>
+                <p class="para">Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+            </div>
+            <div class="reasons-card">
+                <h3 class="title">Create profiles for kids</h3>
+                <p class="para">Send kids on adventures with their favourite characters in a space made just for them —
+                    free with your membership.</p>
+            </div>
+        </div>
+        </section>
+
+        <section class="three">
+            <div class="heading questions">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="question-box">
+                <div class="ques">What is Netflix?<span class="material-symbols-outlined">
+                        add_2
+                    </span>
+                </div>
+                <div class="ques">How much does Netflix cost?<span class="material-symbols-outlined">
+                        add_2
+                    </span>
+                </div>
+                <div class="ques">Where can I watch?<span class="material-symbols-outlined">
+                        add_2
+                    </span>
+                </div>
+                <div class="ques">How do I cancel?<span class="material-symbols-outlined">
+                        add_2
+                    </span>
+                </div>
+                <div class="ques">What can I watch on Netflix?<span class="material-symbols-outlined">
+                        add_2
+                    </span>
+                </div>
+                <div class="ques">Is Netflix good for kids?<span class="material-symbols-outlined">
+                        add_2
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="fourth">
+              <h3>Ready to watch? Enter your email to create or restart your membership.
+            </h3>
+            <div class="mail">
+                <input type="email" class="register emailId" placeholder="Email address">
+                <button class="start">Get Started<span
+                        class="material-symbols-outlined">arrow_forward_ios</span></button>
+        </section>
+
+
+
 
     </div>
 

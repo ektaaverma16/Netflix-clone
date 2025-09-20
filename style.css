@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
 body {
@@ -23,7 +25,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.751);
+    background-color: rgba(0, 0, 0, 0.71);
     z-index: 1;
 }
 
@@ -41,7 +43,8 @@ body {
     margin-right: 1.5rem;
 }
 
-.navbar,.nav_options {
+.navbar,
+.nav_options {
     position: relative;
     z-index: 2;
 }
@@ -87,19 +90,19 @@ body {
     position: relative;
 }
 
-h1,
+.main h1,
 p,
 h3 {
     color: white;
     z-index: 2;
 }
 
-h1 {
+.main h1 {
     font-weight: 900;
     font-size: 2.5rem;
 }
 
-p {
+.main p {
     padding-top: 0.5rem;
     color: white;
     z-index: 2;
@@ -107,7 +110,7 @@ p {
     font-size: 14px;
 }
 
-h3 {
+.main h3 {
     padding-top: 1.2rem;
     font-size: 11px;
     font-weight: 400;
@@ -118,7 +121,7 @@ h3 {
     padding-top: 0.8rem;
 }
 
-#emailId {
+.emailId {
     height: 2.3rem;
     width: 15rem;
     background-color: rgba(23, 23, 23, 0.848);
@@ -126,11 +129,12 @@ h3 {
     border-radius: 2.5px;
     margin-right: 0.35rem;
 }
-.mail input::placeholder{
+
+.mail input::placeholder {
     font-size: 10.5px;
     padding-left: 0.5rem;
     color: rgba(255, 255, 255, 0.586);
-    
+
 }
 
 .mail button {
@@ -142,67 +146,181 @@ h3 {
     color: white;
     font-size: 1rem;
     font-weight: 600;
- padding: 0.5rem 0.5rem 0.5rem 0.5rem ;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .mail span {
     font-size: 14px;
 
 }
-.start .material-symbols-outlined{
-    margin-left:0.6rem;
-}
-.curve {
-  position: relative;
-  bottom: 0;
-  line-height: 0;
-  width: 100%;
-  overflow: hidden;
-  z-index: 1;
 
+.start .material-symbols-outlined {
+    margin-left: 0.6rem;
+}
+
+.curve {
+    position: relative;
+    bottom: 0;
+    line-height: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .curve svg {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.container{
-    margin-top: 4rem;
-      font-family: 'Noto Sans', sans-serif;
-      padding: 0px 85px;
-
-}
-.trending-now h2{
-    color: white;
-    font-size: 1rem;
     display: block;
+    width: 100%;
+    height: auto;
 }
-.trending-now{
+
+.container {
+    margin-top: 4rem;
+    padding: 0rem 6rem;
+}
+
+.heading {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.heading h2 {
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.contents {
+    margin-bottom: 2rem;
+}
+
+.cards {
     display: flex;
     gap: 0.7rem;
 }
-.movie-card{
+
+.movie-card {
     position: relative;
     display: inline-block;
     margin: 10px;
 }
 
-.movie-card img{
+.movie-card img {
     width: 7.5rem;
     height: 10.5rem;
     border-radius: 5px;
 }
+
 .rank {
     font-family: "Roboto", sans-serif;
-  position: absolute;
-  bottom: 5px;   /* move number outside bottom */
-  left: -15px;
-  font-size: 4.5rem;
-  font-weight: 900;
-  color:black;
-  -webkit-text-stroke: 1.2px white;
-        
+    position: absolute;
+    bottom: 5px;
+    left: -15px;
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 1.2px white;
 }
 
- 
+.more-reasons {
+    padding: 0.8rem 0rem;
+}
+
+
+.reasons-card {
+    position: relative;
+    overflow: hidden;
+    height: 12rem;
+    width: 14rem;
+    padding:1rem 0.8rem 0rem 0.8rem;
+    border-radius: 12px;
+    background:
+        linear-gradient(to bottom right, #061f4a, #2e0c41);
+}
+
+.title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.para {
+    font-size: 0.67rem;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.reasons {
+    display: flex;
+    gap: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.reasons-card p {
+    color: #d9d6d6;
+}
+
+.reasons-card h3 {
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.three {
+    margin-bottom: 2rem;
+}
+
+.questions {
+    padding: 0.8rem 0rem;
+
+}
+
+.question-box {
+    display: flex;
+    gap: 0.35rem;
+    flex-direction: column;
+}
+
+.ques {
+    height: 3.5rem;
+    width: 100%;
+    background-color: rgba(65, 64, 64, 0.74);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+    padding-left: 1rem;
+    padding-top: 1.2rem;
+    padding-right: 1rem;
+
+}
+
+.ques:hover {
+    transition: all 0.4s 1ms;
+    background-color: rgba(83, 82, 82, 0.8);
+    cursor: pointer;
+}
+
+.ques span {
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+.fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth h3 {
+    padding-top: 1.2rem;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.register {
+    height: 2.3rem;
+    width: 25rem;
+    background-color: rgba(23, 23, 23, 0.848);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2.5px;
+    margin-right: 0.35rem;
+}
